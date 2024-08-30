@@ -16,7 +16,9 @@ connectDB();
 
 // Routes
 app.get("/api/test", (req, res) => {
-  res.send("API is running");
+  res.status(200).json({
+    message: "API is running",
+  });
 });
 
 app.use("/api/user", userRoutes);
