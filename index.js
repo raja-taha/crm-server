@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 connectDB();
 
 // Routes
-app.get("/", (req, res) => {
+app.get("/api/test", (req, res) => {
   res.send("API is running");
 });
 
