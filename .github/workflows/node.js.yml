@@ -25,6 +25,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    -  run: |
+    - run: |
         touch .env
-        echo "${{ secrets.REACT_APP_API_URL }}" > .env
+        echo "${{ secrets.ENV_SERVER }}" > .env
